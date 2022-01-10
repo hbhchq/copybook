@@ -1,0 +1,812 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\My.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""          // 标准组件\r\n"
+    "#include ""l.CHS\\afxprint.rc""        // 打印/打印预览资源\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.CHS\\afxribbon.rc""               // MFC 功能区和控件条资源\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\练字工具.ico"
+IDR_MyTYPE              ICON                    "res\\练字工具Doc.ico"
+IDI_TASKPANE_OPENFILE   ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+IDB_MAIN                BITMAP                  "res\\main.bmp"
+IDB_FILELARGE           BITMAP                  "res\\filelarge.bmp"
+IDB_FILESMALL           BITMAP                  "res\\filesmall.bmp"
+IDB_WRITELARGE          BITMAP                  "res\\writelarge.bmp"
+IDB_WRITESMALL          BITMAP                  "res\\writesmall.bmp"
+IDB_BUTTONS             BITMAP                  "res\\buttons.bmp"
+IDB_GRID_STYLE          BITMAP                  "res\\bitmap1.bmp"
+IDB_GRID_CATEGORY2      BITMAP                  "res\\bmp00001.bmp"
+IDB_GRID_STYLE_SMALL    BITMAP                  "res\\bmp00002.bmp"
+IDB_PAGE_LAYOUT         BITMAP                  "res\\bmp00003.bmp"
+IDB_CHAR_STYLE          BITMAP                  "res\\bitmap2.bmp"
+IDB_GRID_HUI_STYLE      BITMAP                  "res\\bmp00004.bmp"
+IDB_GRID_HUI_STYLE_SMALL BITMAP                  "res\\bitmap3.bmp"
+IDB_PAGELAYOUT_SMALL    BITMAP                  "res\\bmp00005.bmp"
+IDB_BACKCOLOR           BITMAP                  "res\\bmp00006.bmp"
+IDB_BACKCOLOR_SMALL     BITMAP                  "res\\bmp00007.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio.NET 2005(&5)",  ID_VIEW_APPLOOK_VS_2005
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+        MENUITEM "任务窗格",                        ID_VIEW_TASKPANE
+        MENUITEM "状态窗格",                        32870
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 电脑字贴(&A)...",              ID_APP_ABOUT
+    END
+    POPUP "样式"
+    BEGIN
+        POPUP "字符样式"
+        BEGIN
+            MENUITEM "加粗",                          ID_CHAR_STYLE_WEIGHT
+            MENUITEM "颜色",                          ID_FONT_COLOR
+            MENUITEM "空心",                          ID_FONT_HOLLOW
+            MENUITEM "实线",                          ID_FONT_SOLID
+            MENUITEM "上下偏移",                        ID_CHAR_OFFSETY
+            POPUP "文字方向"
+            BEGIN
+                MENUITEM "方向",                          ID_CHAR_DIRECT
+                MENUITEM "横排，从左到右",                     ID_CHAR_DIRECT1
+                MENUITEM "横排，从右到左",                     ID_CHAR_DIRECT2
+                MENUITEM "竖排，从左到右",                     ID_CHAR_DIRECT3
+                MENUITEM "竖排，从右到左",                     ID_CHAR_DIRECT4
+            END
+        END
+        POPUP "格线样式"
+        BEGIN
+            MENUITEM "格子类型",                        ID_GRID_CATEGORY
+            POPUP "线条"
+            BEGIN
+                MENUITEM "线条颜色",                        ID_LINE_COLOR
+                POPUP "线条样式"
+                BEGIN
+                    MENUITEM "样式",                          ID_LINE_STYLE
+                    MENUITEM "样式1",                         ID_LINE_STYLE1
+                    MENUITEM "样式2",                         ID_LINE_STYLE2
+                    MENUITEM "样式3",                         ID_LINE_STYLE3
+                    MENUITEM "样式4",                         ID_LINE_STYLE4
+                    MENUITEM "样式5",                         ID_LINE_STYLE5
+                    MENUITEM "样式6",                         ID_LINE_STYLE6
+                    MENUITEM "样式7",                         ID_LINE_STYLE7
+                    MENUITEM "样式8",                         ID_LINE_STYLE8
+                END
+            END
+            MENUITEM "格子尺寸",                        ID_GRID_SIZE
+            POPUP "格子间距"
+            BEGIN
+                MENUITEM "行间距",                         32803
+                MENUITEM "列间距",                         32804
+            END
+        END
+        POPUP "页面布局"
+        BEGIN
+            POPUP "页边距"
+            BEGIN
+                MENUITEM "上",                           ID_PAGE_MARGIN_TOP
+                MENUITEM "下",                           ID_PAGE_MARGIN_BOTTOM
+                MENUITEM "左",                           ID_PAGE_MARGIN_LEFT
+                MENUITEM "右",                           ID_PAGE_MARGIN_RIGHT
+            END
+            MENUITEM "水平居中",                        ID_CENTER_H
+            MENUITEM "垂直居中",                        ID_CENTER_V
+            POPUP "纸张方向"
+            BEGIN
+                MENUITEM "纵向",                          ID_PAPER_PORTRAIT
+                MENUITEM "横向",                          ID_PAPER_LANDSCAPE
+            END
+        END
+        POPUP "回字格设置"
+        BEGIN
+            MENUITEM "内外比率",                        ID_HUI_IN_OUT_RATE
+            MENUITEM "宽高比率",                        ID_HUI_W_H_RATE
+            MENUITEM "上下偏移",                        ID_HUI_OFFSETY
+        END
+        MENUITEM "任务窗格",                        ID_VIEW_TASKPANE
+        MENUITEM "字格十等分",                       ID_TASKPANE_GRID_SPLIT
+        POPUP "自绘格子"
+        BEGIN
+            MENUITEM "自绘格子",                        ID_OWNERDRAWGRID
+            MENUITEM "打开图像",                        ID_OPENDRAWIMG
+            MENUITEM "保存图像",                        ID_SAVEDRAWIMG
+            MENUITEM "编辑图像",                        ID_EDITIMG
+            MENUITEM "图像预览",                        ID_OWNERDRAWPREVIEW
+            MENUITEM "背景色",                         ID_BACKGROUND
+        END
+    END
+END
+
+IDR_POPUP_EDIT MENU 
+BEGIN
+    POPUP "编辑"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_WINDOWS_MENU MENU 
+BEGIN
+    MENUITEM "新建窗口(&N)",                    ID_WINDOW_NEW
+END
+
+IDR_THEME_MENU MENU 
+BEGIN
+    MENUITEM "Office 2007 (蓝色样式)(&B)",      ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (黑色样式)(&L)",      ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (银色样式)(&S)",      ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (水绿色样式)(&A)",     ID_VIEW_APPLOOK_OFF_2007_AQUA
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 238, 107
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 电脑字贴"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "电脑字贴，1.0 版",IDC_STATIC,40,15,114,8,SS_NOPREFIX
+    LTEXT           "作者：胡长群  Copyright (C) 2010",IDC_STATIC,41,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,181,86,50,14,WS_GROUP
+    LTEXT           "未注册，不能正常使用打印功能。点击下面的“注册”按钮，选择授权文件，注册成功后，将不会有功能限制。若无授权文件，请先点下面的”查看计算机标识“以获取计算机标识，然后将其提供给作者，以获得正式授权文件。",IDC_LICENSE_INFOR,7,51,224,35
+    PUSHBUTTON      "注册……",ID_LICENSE,130,86,50,14,WS_GROUP
+    LTEXT           "e-mail:hbhchq@hotmail.com hbhchq@163.com  QQ:25096620",IDC_STATIC,13,38,205,8
+    PUSHBUTTON      "查看计算机标识",IDC_MACHINE_ID,7,86,82,14
+END
+
+IDD_HARDWARE DIALOGEX 0, 0, 238, 62
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+FONT 9, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,1,225,1
+    EDITTEXT        IDC_EDIT1,6,9,226,27,ES_MULTILINE | ES_AUTOHSCROLL | WS_HSCROLL
+    PUSHBUTTON      "保存到文件",IDC_SAVE,120,39,50,14
+    PUSHBUTTON      "复制机器标识",IDC_COPY,68,39,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "FileDescription", "用电脑将各种字体按照标准描红字贴的形式打印出来，以方便日常练字。"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "电脑字帖.exe"
+            VALUE "LegalCopyright", "作者：胡长群。保留所有权利。"
+            VALUE "OriginalFilename", "电脑字帖.exe"
+            VALUE "ProductName", "电脑字帖"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        VERTGUIDE, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_HARDWARE, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 232
+        VERTGUIDE, 232
+        BOTTOMMARGIN, 54
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_ZOOMOUT             CURSOR                  "res\\cursor1.cur"
+IDC_ZOOMIN              CURSOR                  "res\\cur00001.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+    IDS_LINE_COLOR          "颜色："
+    IDS_GRID_LINE           "格子线条"
+    IDS_GRID_SIZE           "格子尺寸(毫米)："
+    IDS_FONT_COLOR          "颜色"
+    IDS_GRID_ROWSPACE       "行间距(0.1毫米)："
+    IDS_GRID_COLSPACE       "列间距(0.1毫米)："
+    IDS_GRID_SIZE_SPACE     "格子尺寸与间距"
+    IDS_FONT_HOLLOW         "空心字"
+    IDS_FONT_PREVIEW        "例字预览"
+    IDS_CHAR_SAMPLE         "中"
+    IDS_CHAR_SAMPLE_DES     "例字预览中的文字大小是固定的，改变字体高度不会对预览文字起作用，只对打印和打印预览有效。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "电脑字帖\n\n电脑字帖\n文本文件（*.txt）\n.txt\nCalligraphyCopybook.Document\nCalligraphyCopybook.Document"
+    IDS_HUI_W_H_RATE        "内格子宽高比率：%d%%"
+    IDS_HUI_OFFSETY         "内方格上下偏移（0.1毫米）：%d"
+    IDS_CHAR_OFFSETY        "上下偏移（0.1毫米）：%d"
+    IDS_TASKPANE_GRIDSPLIT  "将字格十等分，以仔细观察字符的笔画位置与结构（对打印无效）"
+    IDS_TASKPANE_GRIDSPLIT2 "取消字格十等分"
+    IDS_EDITGRIDIMG         "新建、编辑格子图像"
+    IDS_SAVEGRIDIMG         "保存格子图像到文件"
+    IDS_OPENGRIDIMG         "指定格子图像文件"
+    IDS_SELECTBACKGROUND    "选择背景色"
+    IDS_NOBACKCOLOR         "无背景色"
+    IDS_OTHERCOLOR          "其他颜色"
+    IDS_WMI_MSG             "提取计算机硬件信息出失败！\n请检测WMI相关组件是否正确安装、WMI相关服务是否正常启动。"
+    IDS_HAS_LICENCE         "已经注册，所有功能均可正常使用。"
+    IDS_NO_LICENCE          "未注册，不能正常使用打印功能。点击下面的“注册”按钮，选择授权文件，注册成功后，将不会有功能限制。若无授权文件，请先点下面的”查看计算机标识“以获取计算机标识，然后将其提供给作者，以获得正式授权文件。"
+    IDS_REGISTER_OK         "注册成功！"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "电脑字贴"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_PAGE_SETUP      "更改打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "更改打印机选项和打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_DIRECT    "使用当前选项打印活动文档\n快速打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号、版权以及注册信息。\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览\n取消预览"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHAR_DIRECT1        "横排，从左到右"
+    IDS_CHAR_DIRECT2        "横排，从右到左"
+    IDS_CHAR_DIRECT3        "竖排，从左到右"
+    IDS_CHAR_DIRECT4        "竖排，从右到左"
+    IDS_CHAR_DIRECT         "文字方向"
+    IDS_PAGE_LAYOUT         "页面布局"
+    IDS_IMGTOOLARGE         "此处不能编辑特别大的（高或宽大于100像素）或黑白两色的图像！\r\n\r\n如果确实需要编辑，请使用其他绘图工具或专业的图像处理软件。"
+    IDS_PAPER_PORTRAIT      "纵向"
+    IDS_PAPER_LANDSCAPE     "横向"
+    IDS_PAPER_ORIENT        "纸张方向"
+    IDS_STATUS_PANE1        "就绪"
+    IDS_PREVIEW_PAGE_INFOR  "当前：第%d页，总页数：%d页"
+    IDS_NUMBER_SCOPE_MSG    "数据不符合要求！\r\n必须输入数字，并且范围为：%d至%d。"
+    IDS_SETTING_INVALID     "页边距、字格尺寸设置有问题，不能正常打印，请检查页边距和字格设置！"
+    IDS_HUI_GRID_STYLE      "回字格设置"
+    IDS_HUI_IN_OUT_RATE     "内外格子比率：%d%%"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FONT_NAME           "字体："
+    IDS_FONT_HEIGTH         "字符高度（毫米）："
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FONT_BOLD           "加粗"
+    IDS_FONT_SOLID          "实线"
+    IDS_RIBBON_FILE         "文件"
+    IDS_RIBBON_NEW          "新建(&N)"
+    IDS_RIBBON_OPEN         "打开(&O)..."
+    IDS_RIBBON_SAVE         "保存(&S)"
+    IDS_RIBBON_SAVEAS       "另存为(&A)..."
+    IDS_RIBBON_PRINT        "打印"
+    IDS_RIBBON_PRINT_LABEL  "预览并打印文档"
+    IDS_RIBBON_PRINT_QUICK  "快速打印(&Q)"
+    IDS_RIBBON_PRINT_PREVIEW "打印预览(&V)"
+    IDS_RIBBON_PRINT_SETUP  "打印设置(&U)"
+    IDS_RIBBON_CLOSE        "关闭(&C)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIBBON_RECENT_DOCS  "最近使用的文档"
+    IDS_RIBBON_EXIT         "退出(&X)"
+    IDS_RIBBON_HOME         "其他(&T)"
+    IDS_RIBBON_CLIPBOARD    "剪贴板\nD"
+    IDS_RIBBON_PASTE        "粘贴\nV"
+    IDS_RIBBON_CUT          "剪切\nX"
+    IDS_RIBBON_COPY         "复制\nC"
+    IDS_RIBBON_SELECTALL    "全选\nA"
+    IDS_RIBBON_WINDOW       "窗口\nW"
+    IDS_RIBBON_WINDOWS      "窗口\nI"
+    IDS_RIBBON_STYLE        "样式"
+    IDS_RIBBON_STYLE_TIP    "修改视觉样式"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIBBON_STYLE_DESC   "选择一个 Office 2007 主题"
+    IDS_RIBBON_STATUSBAR    "状态栏"
+    IDS_RIBBON_VIEW         "视图"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VIEW_TASK_PANE      "任务栏"
+    IDS_TASKPANE_OPENFILE   "打开一个文档"
+    IDS_TASKPANE_MOREFILE   "更多文档……"
+    IDS_TASKPANE_COPYBOOK   "字贴预览"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_MENU           "编辑"
+    IDS_RIBBON_GRID_STYLE   "格线样式"
+    IDS_RIBBON_CHAR_STYLE   "文字样式"
+    IDS_GRID_CATEGORY       "格子类型"
+    IDS_GRID_CATEGORY_TIAN  "田字格"
+    IDS_GRID_CATEGORY_MI    "米字格"
+    IDS_GRID_CATEGORY_SPACE "空格"
+    IDS_GRID_CATEGORY_JIU   "九宫格"
+    IDS_GRID_CATEGORY_HUI   "回字格"
+    IDS_FILE_TOOLARGE       "文件大于%d字节，目前只显示了文件的一部分，请拆分文件后重新打开，以显示余下部分。"
+    IDS_FILE_PAGE_SETUP     "页面设置(&U)..."
+    IDS_CHAR_STYLE_FONT     "字体"
+    IDS_PAGE_MARGIN         "页边距"
+    IDS_PAGE_MARGIN_TOP     "上（毫米）："
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GRID_CATEGORY        "文字格的种类和样式。\n字格样式"
+    ID_CHAR_STYLE_FONT      "选择一种字体 \n字体"
+    ID_CHAR_STYLE_HEIGHT    "设置字符高度，以毫米为单位。\n字符高度"
+    ID_CHAR_STYLE_WEIGHT    "将文字加粗打印输出\n加粗"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_LINE_COLOR           "格子边框及内部线条的颜色。\n线条颜色"
+    IDS_LINE_STYLE          "样式："
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GRID_ROWSPACE        "格子每行之间的距离，以0.1毫米为单位。\n行间距"
+    ID_GRID_COLSPACE        "格子每列之间的距离，以0.1毫米为单位。\n列间距"
+    ID_GRID_SIZE            "设置格子的尺寸，以毫米为单位。\n格子尺寸"
+    ID_FONT_COLOR           "文字的颜色。若为空心字则是文字边缘的颜色。\n文字颜色"
+    ID_FONT_HOLLOW          "文字是否以空心字形式打印输出。\n空心字"
+    ID_LINE_STYLE           "格子内部线条的样式。格子若有边框，均为实线。\n线条样式"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FONT_SOLID           "当文字以空心字形式输出时，边缘是否用实线绘制。\n空心字边缘线条样式"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PAGE_MARGIN_LEFT     "打印时纸张左边的空白距离。以毫米为单位。\n左"
+    ID_PAGE_MARGIN_BOTTOM   "打印时纸张下部的空白距离。以毫米为单位。\n下"
+    ID_PAGE_MARGIN_TOP      "打印时纸张上部的空白距离。以毫米为单位。\n上"
+    ID_PAGE_MARGIN_RIGHT    "打印时纸张右边的空白距离。以毫米为单位。\n右"
+    ID_CENTER_H             "内容在水平方向位于纸张的中间位置。\n水平居中"
+    ID_CENTER_V             "内容在垂直方向位于纸张的中间位置。\n垂直居中"
+    ID_PAPER_LANDSCAPE      "横向"
+    ID_PAPER_PORTRAIT       "纵向"
+    ID_HUI_IN_OUT_RATE      "回字格内、外方格大小之比，以百分比表示。\n内外方格比率"
+    ID_HUI_W_H_RATE         "回字格内方格的宽度与高度之比，以百分比表示。\n内方格宽、高比率"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PAGE_MARGIN_BOTTOM  "下（毫米）："
+    IDS_PAGE_MARGIN_LEFT    "左（毫米）："
+    IDS_PAGE_MARGIN_RIGHT   "右（毫米）："
+    IDS_PAGE_CENTER         "居中模式"
+    IDS_PAGE_CENTER_HORZ    "水平居中"
+    IDS_PAGE_CENTER_VERT    "垂直居中"
+    IDS_OWNERDRAWGRID       "自绘格子"
+    IDS_OWNERDRAW           "自绘"
+    IDS_OWNGRIDSELECTMSG    "已经指定了一个自绘的格子图像文件，重新指定图像文件吗？\n如果是重新指定，则选择“是”，如果取消先前指定的文件，则选择“否”。"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_HUI_OFFSETY          "内方格相对外方格的偏移，默认垂直居中，负值向上、正值向下偏移。以0.1毫米为单位。\n上下偏移"
+    ID_CHAR_OFFSETY         "字符在格子中的偏移距离，负值向上，正值向下偏移。以0.1毫米为单位。\n上下偏移"
+    ID_VIEW_TASKPANE        "显示或隐藏任务栏。\n切换任务栏"
+    ID_TASKPANE_GRID_SPLIT  "将每个字格分成十等份，以查看字的笔画位置和结构。\n切分字格"
+    ID_OWNERDRAWGRID        "再系统已有的格子基础上，再绘制特定的样式。可以将样式保存为图像文件，白色默认为透明色，不会显示和打印在字贴上。\n自绘格子"
+    ID_OPENDRAWIMG          "将已存在的图像文件指定为格子样式或不指定格子图像文件。\n设定自绘格子图像文件"
+    ID_SAVEDRAWIMG          "将自绘的格子图像保存到磁盘文件中。\n保存图像"
+    ID_EDITIMG              "编辑格子图像。如果未指定，则新建一个图像。\n编辑格子图像"
+    ID_OWNERDRAWPREVIEW     "自绘格子图像显示。点击图像可以编辑。默认白色的背景将不会绘制到字贴上。\n格子图像预览"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BACKGROUND           "自绘格子的背景色，这种颜色将作透明处理，不会显示、打印到字贴上。\n选择背景色"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REGISTER_FAIL       "注册失败！ \n请检查授权文件是否合法有效或与作者联系。"
+    IDS_DONT_PRINT_MSG      "未注册，打印及预览时将带有水印图案！\n请点击窗口最右边的“问号”按钮进行注册。"
+    IDS_WATERMARK           "未注册，若想消除此水印，请点击窗口右边的“问号”图标注册。"
+    IDS_REGISTER_PROMPT     "未注册，打印及打印预览时将有水印图案！\n\n现在是否注册？"
+    IDS_LANGUAGE            "语言(&Language)"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "FileDescription", "Print out the Copybook for study writing chinese characters."
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "CalligraphyCopybook.exe"
+            VALUE "LegalCopyright", "Hu Changqun.  All rights reserved."
+            VALUE "OriginalFilename", "CalligraphyCopybook.exe"
+            VALUE "ProductName", "CalligraphyCopybook"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\My.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"          // 标准组件
+#include "l.CHS\afxprint.rc"        // 打印/打印预览资源
+#if !defined(_AFXDLL)
+#include "l.CHS\afxribbon.rc"               // MFC 功能区和控件条资源
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
